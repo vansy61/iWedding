@@ -1,0 +1,15 @@
+<% if flash.any? %>
+<script>
+    function showFlashMessages() {
+        <% flash.each do |key, value| %>
+            showToast("<%= j(key) %>", "<%= j(value) %>");
+        <% end %>
+    }
+    // fix for hotwired
+    if (document.readyState === 'loading') {
+        document.addEventListener("turbo:load", showFlashMessages);
+    } else {
+        showFlashMessages();
+    }
+</script>
+<% end %>
