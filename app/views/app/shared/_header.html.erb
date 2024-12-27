@@ -1,0 +1,26 @@
+<header class="relative flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm py-3">
+    <%= render partial: "app/shared/nav" %>
+</header>
+<section>
+    <div class="border-solid border-t py-3 bg-no-repeat bg-cover bg-left-top bg-violet-50" style="background-image: url('<%= asset_url("rose_bg.png") %>')">
+        <div class="flex justify-center items-center">
+            <div class="flex items-center">
+                <h3 class="mr-4 font-dancing text-2xl capitalize">Chú rể</h3>
+                <%= image_tag("demo-avatar.webp", class: "rounded-full size-16 border-solid border-violet-400 border-2")%>
+            </div>
+            <div class="text-3xl mx-4 relative">
+                <i class="fa fa-heart text-red-500 "></i>
+                <div class="absolute top-0 left-0 size-full animate-heart-zoom-1">
+                    <i class="fa fa-heart text-red-500 "></i>
+                </div>
+                <div class="absolute top-0 left-0 size-full animate-heart-zoom">
+                    <i class="fa fa-heart text-red-500 "></i>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <%= image_tag("demo-avatar-1.webp", class: "rounded-full size-16 border-solid border-violet-400 border-2")%>
+                <h3 class="ms-4 font-dancing text-2xl capitalize">Cô dâu</h3>
+            </div>
+        </div>
+    </div>
+</section>
