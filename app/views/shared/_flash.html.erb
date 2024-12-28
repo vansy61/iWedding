@@ -5,11 +5,8 @@
             showToast("<%= j(key) %>", "<%= j(value) %>");
         <% end %>
     }
-    // fix for hotwired
-    if (document.readyState === 'loading') {
-        document.addEventListener("turbo:load", showFlashMessages);
-    } else {
+    window.addEventListener("load", (event) => {
         showFlashMessages();
-    }
+    });
 </script>
 <% end %>
