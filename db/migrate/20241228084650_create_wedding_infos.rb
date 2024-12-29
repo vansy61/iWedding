@@ -5,10 +5,12 @@ class CreateWeddingInfos < ActiveRecord::Migration[7.2]
       t.string :bride_dad
       t.string :bride_mom
       t.string :bride_address
+      t.text :bride_bio
       t.string :groom_name
       t.string :groom_dad
       t.string :groom_mom
       t.string :groom_address
+      t.text :groom_bio
       t.datetime :wedding_date
       t.datetime :bride_party_date
       t.string :bride_party_address
