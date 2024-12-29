@@ -21,10 +21,9 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="bg-slate-50">
     <%= render partial: "app/shared/header" %>
-    <%= render partial: "app/shared/menu" %>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <main class="container mx-auto mt-4">
       <%= yield %>
     </main>
     <%= render partial: "shared/flash" %>
