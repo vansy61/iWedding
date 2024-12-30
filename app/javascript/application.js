@@ -4,5 +4,6 @@
 
 
 import "toastify_custom"
+import "preview_file_image"
 
 

@@ -61,3 +61,4 @@ end
 gem "tailwindcss-rails", "~> 3.0"
 gem "font-awesome-rails"
 gem "devise", "~> 4.9"
+gem "image_processing", ">= 1.2"

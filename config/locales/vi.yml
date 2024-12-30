@@ -1,5 +1,17 @@
 vi:
   activerecord:
+    attributes:
+      wedding_info:
+        groom_name: "Tên chú rể"
+        groom_address: "Địa chỉ chú rể"
+        groom_dad: "Tên cha chú rể"
+        groom_mom: "Tên mẹ chú rể"
+        groom_bio: "Thông tin chú rể"
+        bride_name: "Tên cô dâu"
+        bride_address: "Địa chỉ cô dâu"
+        bride_dad: "Tên cha cô dâu"
+        bride_mom: "Tên mẹ cô dâu"
+        bride_bio: "Thông tin cô dâu"
     errors:
       messages:
         record_invalid: 'Xác thực không thành công: %{errors}'

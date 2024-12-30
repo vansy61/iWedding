@@ -13,7 +13,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
-  namespace :app do 
+  namespace :app do
     root "dashboard#index"
+
+    resource :wedding_info
   end
 end
